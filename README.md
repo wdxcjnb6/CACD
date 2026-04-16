@@ -1,6 +1,6 @@
-# CC_discover
+# CACD
 
-**CC_discover** is a time-series causal discovery framework that learns directed causal graphs — with lag and modulation direction — directly from multivariate time-series data, without requiring any predefined graph structure.
+**CACD** is a time-series causal discovery framework that learns directed causal graphs — with lag and modulation direction — directly from multivariate time-series data, without requiring any predefined graph structure.
 
 The model is built around a dual-branch decoder architecture: a **self-attention branch** captures within-channel temporal dynamics, and a **cross-attention branch** captures cross-channel causal relationships. Causal strength, transmission lag, and excitatory/inhibitory direction are extracted jointly from attention weights and input-gradient attribution.
 
@@ -38,8 +38,8 @@ The model is built around a dual-branch decoder architecture: a **self-attention
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/CC_discover.git
-cd CC_discover
+git clone https://github.com/YOUR_USERNAME/CACD.git
+cd CACD
 
 # Create and activate a virtual environment (recommended)
 python -m venv venv
@@ -94,7 +94,7 @@ python -u ./run_main.py \
 ## Project Structure
 
 ```
-CC_discover/
+CACD/
 ├── run_main.py             # Main entry point (argument parsing, training loop)
 ├── demo.sh                 # Quick-start shell script
 │
@@ -103,7 +103,7 @@ CC_discover/
 │   └── exp_discover.py     # Training / validation / testing loop
 │
 ├── models/
-│   └── CC_discover.py      # Model architecture (dual-branch decoder)
+│   └── CACD.py      # Model architecture (dual-branch decoder)
 │
 ├── utils/
 │   ├── tools.py            # Core utilities, visualization, causal export
