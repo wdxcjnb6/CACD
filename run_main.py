@@ -19,7 +19,6 @@ import torch
 import torch.nn as nn
 
 from exp.exp_discover import Exp_Main
-from exp.exp_validation import Exp_Validation
 from data.data_factory import data_provider
 from utils.tools import (
     extract_channel_mask_from_model,
