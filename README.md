@@ -1,6 +1,6 @@
 # CACD
 
-**CACD** is a time-series causal discovery framework that learns directed causal graphs — with lag and modulation direction — directly from multivariate time-series data, without requiring any predefined graph structure.
+**CACD** is a time-series causal discovery framework that learns directed causal graphs, together with transmission lag and modulation polarity, directly from multivariate time-series data without requiring any predefined graph structure.
 
 The model uses a dual-branch decoder architecture: the self-attention branch models within-channel temporal dynamics, whereas the cross-attention branch captures cross-channel causal relationships. Causal strength, transmission lag, and modulation polarity are jointly inferred from attention weights and input-gradient attribution.
 ---
