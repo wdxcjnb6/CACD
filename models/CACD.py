@@ -1,5 +1,5 @@
 """
-Causal Discovery Model Architecture (CC_discover)
+Causal Discovery Model Architecture (CACD)
 
 Multi-channel time-series forecasting with a dual-branch decoder:
   - Self-attention  branch: captures same-channel temporal dependencies.
