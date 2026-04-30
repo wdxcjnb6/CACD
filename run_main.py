@@ -1,5 +1,5 @@
 """
-Main Training Script for CC_discover
+Main Training Script for CACD
 Handles multi-seed training, testing, and optional Phase-2 validation (ablation study).
 
 Usage example:
@@ -44,15 +44,15 @@ from utils.metrics import (
 # ---------------------------------------------------------------------------
 
 def build_parser() -> argparse.ArgumentParser:
-    """Define and return the argument parser for CC_discover experiments."""
-    parser = argparse.ArgumentParser(description='CC_discover - Time Series Causal Discovery')
+    """Define and return the argument parser for CACD experiments."""
+    parser = argparse.ArgumentParser(description='CACD - Time Series Causal Discovery')
 
     # Basic settings
     parser.add_argument('--is_training',  type=int,   default=1,
                         help='1 = train then test; 0 = test only')
     parser.add_argument('--model_id',     type=str,   default='test',
                         help='Model identifier (used in checkpoint and output paths)')
-    parser.add_argument('--model',        type=str,   default='CC_discover',
+    parser.add_argument('--model',        type=str,   default='CACD',
                         help='Model class name')
     parser.add_argument('--seed_iter',    type=int,   default=1,
                         help='Number of independent random seeds to run')
