@@ -16,7 +16,7 @@ from torch.optim import lr_scheduler
 
 from data.data_factory import data_provider
 from exp.exp_basic import Exp_Basic
-from models import CC_discover
+from models import CACD
 from utils.tools import (
     EarlyStopping,
     adjust_learning_rate,
@@ -31,7 +31,7 @@ warnings.filterwarnings('ignore')
 
 class Exp_Main(Exp_Basic):
     """
-    Main experiment class for CC_discover causal discovery model.
+    Main experiment class for CACD causal discovery model.
 
     Handles training with optional AGC (Attention-Gradient Consistency) loss,
     multi-layer cross-attention accumulation during testing, and
@@ -42,8 +42,8 @@ class Exp_Main(Exp_Basic):
         super(Exp_Main, self).__init__(args)
 
     def _build_model(self):
-        """Build and return the CC_discover model (wrapped in DataParallel if needed)."""
-        model = CC_discover.Model(self.args).float()
+        """Build and return the CACD model (wrapped in DataParallel if needed)."""
+        model = CACD.Model(self.args).float()
         if self.args.use_multi_gpu and self.args.use_gpu:
             model = nn.DataParallel(model, device_ids=self.args.device_ids)
         return model
