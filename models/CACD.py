@@ -30,7 +30,7 @@ from .time2vec import Time2Vec
 
 class Model(nn.Module):
     """
-    Top-level wrapper for CC_discover.
+    Top-level wrapper for CACD.
 
     Handles the (B, T, C) <-> (B, C, T) tensor layout convention expected by
     the rest of the codebase and delegates all computation to Model_backbone.
