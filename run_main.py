@@ -135,7 +135,7 @@ def build_parser() -> argparse.ArgumentParser:
                         help='Enable token pruning (currently unused)')
     parser.add_argument('--show_layer_idx',  type=int,   default=-1,
                         help='Layer index to visualize (-1 = last layer)')
-    parser.add_argument('--save_seed_plots', action='store_true', default=False,
+    parser.add_argument('--save_seed_plots', action='store_true', default=True,
                         help='Save per-seed plots in addition to the seed-averaged output')
 
     # Training hyperparameters
