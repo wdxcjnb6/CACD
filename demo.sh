@@ -69,7 +69,7 @@ TRAIN_EPOCHS=200
 PATIENCE=10           # early-stopping patience (epochs without improvement)
 LEARNING_RATE=0.001
 LRADJ=TST             # learning-rate schedule: TST (OneCycleLR) | type1 | fixed
-SEED_ITER=10          # number of independent random seeds to average over
+SEED_ITER=3          # number of independent random seeds to average over
 
 # ---------------------------------------------------------------------------
 # Output / visualization
